@@ -1,0 +1,70 @@
+{
+    "id": "minecraft",
+    "name": "Minecraft",
+    "documentationUrl": "",
+    "launchConfiguration": {
+        "image": "itzg/minecraft-server",
+        "portConfig": [25565],
+        "environmentVariables": [
+            {
+                "name": "EULA",
+                "type": "bool",
+                "required": true
+            },
+            {
+                "name": "TYPE",
+                "type": "string",
+                "required": true
+            }
+        ],
+        "volumes": [
+            {
+                "name": "/data/",
+                "required": false
+            },
+            {
+                "name": "/worlds/",
+                "required": false
+            }
+        ],
+        "command": "",
+        "healthConfiguration": {
+            "type": "docker",
+            "command": "docker container inspect -f \"{{.State.Health.Status}}\" mc",
+            "states": [
+                {
+                    "state": "healthy",
+                    "desiredResponse": "healthy"
+                },
+                {
+                    "state": "unhealthy",
+                    "desiredResponse": ""
+                }
+            ]
+        }
+    },
+    "pluginConfiguration": {
+        "id": "id-hello-world",
+        "description": "Hello world plugin",
+        "version": "0.0.1",
+        "capabilities": [
+            {
+                "type": "HEALTH"
+            }, 
+            {
+                "type": "BACKUP"
+            }, 
+            {
+                "type": "STATISTICS",
+                "outputs": [
+                    "serverName", 
+                    "playerCount", 
+                    "serverTime" 
+                ]
+            },
+            {
+                "type": "SERVER_LIFECYCLE"
+            }
+        ]
+    }
+}
