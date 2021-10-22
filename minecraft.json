@@ -1,7 +1,7 @@
 {
     "id": "minecraft",
     "name": "Minecraft",
-    "documentationUrl": "",
+    "documentationUrl": "https://github.com/itzg/docker-minecraft-server/blob/master/README.md",
     "launchConfiguration": {
         "image": "itzg/minecraft-server",
         "portConfig": [25565],

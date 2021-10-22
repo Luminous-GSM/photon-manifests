@@ -1,5 +1,15 @@
-{
-    "manifests": [
-        "minecraft.json"
-    ]
-}
+[
+    {
+        "name": "Minecraft",
+        "photons": [
+            "minecraft.json"
+        ],
+        "description": "Minecraft is a sandbox video game developed by the Swedish video game developer Mojang Studios. ... In Minecraft, players explore a blocky, procedurally generated 3D world with virtually infinite terrain, and may discover and extract raw materials, craft tools and items, and build structures or earthworks.",
+        "url": "https://www.minecraft.net",
+        "tags": [
+            "Open-world", 
+            "Sandbox", 
+            "Survival"
+        ]
+    }
+]
