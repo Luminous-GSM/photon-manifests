@@ -1,10 +1,22 @@
 {
-    "id": "minecraft",
+    "id": "itzg_minecraft",
     "name": "Minecraft",
     "documentationUrl": "https://github.com/itzg/docker-minecraft-server/blob/master/README.md",
+    "verified": true,
+    "arch": [
+        "linux/arm/v7", 
+        "linux/arm64",
+        "linux/amd64"
+    ],
     "launchConfiguration": {
         "image": "itzg/minecraft-server",
-        "portConfig": [25565],
+        "tag": "latest",
+        "portConfig": [
+            {
+                "port": 25565,
+                "protocol": "tcp"
+            }
+        ],
         "environmentVariables": [
             {
                 "name": "EULA",
@@ -17,13 +29,15 @@
                 "required": true
             }
         ],
-        "volumes": [
+        "mounts": [
             {
-                "name": "/data/",
+                "source": "/minecraft/data",
+                "destination": "/data",
                 "required": false
             },
             {
-                "name": "/worlds/",
+                "source": "/minecraft/worlds",
+                "destination": "/worlds",
                 "required": false
             }
         ],
@@ -43,28 +57,50 @@
             ]
         }
     },
-    "pluginConfiguration": {
-        "id": "id-hello-world",
-        "description": "Hello world plugin",
-        "version": "0.0.1",
-        "capabilities": [
-            {
-                "type": "HEALTH"
-            }, 
-            {
-                "type": "BACKUP"
-            }, 
-            {
-                "type": "STATISTICS",
-                "outputs": [
-                    "serverName", 
-                    "playerCount", 
-                    "serverTime" 
-                ]
-            },
-            {
-                "type": "SERVER_LIFECYCLE"
-            }
-        ]
-    }
+    "plugins": [
+        {
+            "id": "plugin-hello-world",
+            "description": "Hello world plugin",
+            "version": "0.0.1",
+            "capabilities": [
+                {
+                    "type": "HEALTH"
+                }, 
+                {
+                    "type": "BACKUP"
+                }, 
+                {
+                    "type": "STATISTICS",
+                    "outputs": [
+                        {
+                            "name": "serverName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "playerCount",
+                            "type": "number"
+                        },
+                        {
+                            "name": "serverUpSince",
+                            "type": "date"
+                        }
+                    ]
+                },
+                {
+                    "type": "SERVER_LIFECYCLE"
+                }
+            ]
+        },
+        {
+            "id": "plugin-s3-backup",
+            "name": "S3 Backup plugin",
+            "description": "Plugin to backup world to S3",
+            "version": "0.0.1",
+            "capabilities": [
+                {
+                    "type": "BACKUP"
+                }
+            ]
+        }
+    ]
 }

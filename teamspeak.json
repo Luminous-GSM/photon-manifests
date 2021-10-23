@@ -1,0 +1,9 @@
+{
+    "id": "teamspeak",
+    "name": "Teamspeak",
+    "documentationUrl": "https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images",
+    "verified": true,
+    "arch": [
+        "linux/amd64"
+    ]
+}
