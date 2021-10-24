@@ -3,6 +3,7 @@
     "name": "Teamspeak",
     "documentationUrl": "https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images",
     "verified": true,
+    "imageUrl": "",
     "arch": [
         "linux/amd64"
     ]

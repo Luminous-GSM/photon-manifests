@@ -3,6 +3,7 @@
     "name": "Teamspeak-arm",
     "documentationUrl": "https://github.com/ertagh/teamspeak3-server-arm",
     "verified": false,
+    "imageUrl": "",
     "arch": [
         "linux/arm/v7",
         "limux/arm64/v8"

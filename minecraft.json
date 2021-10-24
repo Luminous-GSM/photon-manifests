@@ -3,6 +3,7 @@
     "name": "Minecraft",
     "documentationUrl": "https://github.com/itzg/docker-minecraft-server/blob/master/README.md",
     "verified": true,
+    "imageUrl": "",
     "arch": [
         "linux/arm/v7", 
         "linux/arm64",

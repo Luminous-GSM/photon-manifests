@@ -1,6 +1,7 @@
 [
     {
         "name": "Minecraft",
+        "imageUrl": "",
         "photons": [
             "minecraft.json"
         ],
@@ -10,6 +11,19 @@
             "Open-world", 
             "Sandbox", 
             "Survival"
+        ]
+    },
+    {
+        "name": "Teamspeak",
+        "imageUrl": "",
+        "photons": [
+            "teamspeak.json",
+            "teamspeak-arm.json"
+        ],
+        "description": "Communications application",
+        "url": "https://www.teamspeak.net",
+        "tags": [
+            "Communication"
         ]
     }
 ]
