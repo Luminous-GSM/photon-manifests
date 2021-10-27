@@ -2,8 +2,9 @@
     "id": "itzg_minecraft",
     "name": "Minecraft",
     "documentationUrl": "https://github.com/itzg/docker-minecraft-server/blob/master/README.md",
+    "description": "",
     "verified": true,
-    "imageUrl": "",
+    "imageUrl": "https://i.ibb.co/YTf4jZv/Minecraft-Logo.png",
     "arch": [
         "linux/arm/v7", 
         "linux/arm64",
