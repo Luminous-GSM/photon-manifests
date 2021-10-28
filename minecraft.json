@@ -2,7 +2,7 @@
     "id": "itzg_minecraft",
     "name": "Minecraft",
     "documentationUrl": "https://github.com/itzg/docker-minecraft-server/blob/master/README.md",
-    "description": "",
+    "description": "Minecraft is a sandbox video game developed by the Swedish video game developer Mojang Studios. In Minecraft, players explore a blocky, procedurally generated 3D world with virtually infinite terrain, and may discover and extract raw materials, craft tools and items, and build structures or earthworks.",
     "verified": true,
     "imageUrl": "https://i.ibb.co/YTf4jZv/Minecraft-Logo.png",
     "arch": [
@@ -17,6 +17,10 @@
             {
                 "port": 25565,
                 "protocol": "tcp"
+            },
+            {
+                "port": 25575,
+                "protocol": "udp"
             }
         ],
         "environmentVariables": [
