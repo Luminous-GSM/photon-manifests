@@ -32,7 +32,47 @@
             {
                 "name": "TYPE",
                 "type": "string",
-                "required": true
+                "required": false
+            },
+            {
+                "name": "FTB_MODPACK_ID",
+                "type": "string",
+                "required": false
+            },
+            {
+                "name": "FTB_MODPACK_VERSION_ID",
+                "type": "string",
+                "required": false
+            },
+            {
+                "name": "MOTD",
+                "type": "string",
+                "required": false
+            },
+            {
+                "name": "DIFFICULTY",
+                "type": "string",
+                "required": false
+            },
+            {
+                "name": "WHITELIST",
+                "type": "string",
+                "required": false
+            },
+            {
+                "name": "OPS",
+                "type": "string",
+                "required": false
+            },
+            {
+                "name": "MAX_PLAYERS",
+                "type": "number",
+                "required": false
+            },
+            {
+                "name": "MAX_WORLD_SIZE",
+                "type": "string",
+                "required": false
             }
         ],
         "mounts": [
