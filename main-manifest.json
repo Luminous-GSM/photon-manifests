@@ -13,9 +13,7 @@
             "Sandbox", 
             "Survival"
         ],
-        "metaTags": [
-            "Game"
-        ]
+        "type": "game"
     },
     {
         "id": "teamspeak",
@@ -30,8 +28,6 @@
         "tags": [
             "Communication"
         ],
-        "metaTags": [
-            "Service"
-        ]
+        "type": "service"
     }
 ]
