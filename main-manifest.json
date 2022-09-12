@@ -41,7 +41,7 @@
     {
         "id": "teamspeak",
         "name": "Teamspeak",
-        "imageUrl": "/icons/minecraft.png",
+        "imageUrl": "/icons/teamspeak.png",
         "photons": [
             {
                 "name": "Teamspeak @ official",
