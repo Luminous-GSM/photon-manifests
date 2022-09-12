@@ -1,12 +1,13 @@
 {
     "id": "itzg_minecraft",
     "name": "Minecraft",
+    "author": "itzg",
     "documentationUrl": "https://github.com/itzg/docker-minecraft-server/blob/master/README.md",
     "description": "Minecraft is a sandbox video game developed by the Swedish video game developer Mojang Studios. In Minecraft, players explore a blocky, procedurally generated 3D world with virtually infinite terrain, and may discover and extract raw materials, craft tools and items, and build structures or earthworks.",
     "verified": true,
-    "imageUrl": "https://i.ibb.co/YTf4jZv/Minecraft-Logo.png",
+    "imageUrl": "/icons/minecraft.png",
     "arch": [
-        "linux/arm/v7", 
+        "linux/arm/v7",
         "linux/arm64",
         "linux/amd64"
     ],
@@ -27,62 +28,72 @@
             {
                 "name": "EULA",
                 "type": "boolean",
-                "required": true
+                "required": true,
+                "default": "true"
             },
             {
                 "name": "TYPE",
                 "type": "string",
-                "required": false
+                "required": false,
+                "default": ""
             },
             {
                 "name": "FTB_MODPACK_ID",
                 "type": "string",
-                "required": false
+                "required": false,
+                "default": ""
             },
             {
                 "name": "FTB_MODPACK_VERSION_ID",
                 "type": "string",
-                "required": false
+                "required": false,
+                "default": ""
             },
             {
                 "name": "MOTD",
                 "type": "string",
-                "required": false
+                "required": false,
+                "default": ""
             },
             {
                 "name": "DIFFICULTY",
                 "type": "string",
-                "required": false
+                "required": false,
+                "default": ""
             },
             {
                 "name": "WHITELIST",
                 "type": "string",
-                "required": false
+                "required": false,
+                "default": ""
             },
             {
                 "name": "OPS",
                 "type": "string",
-                "required": false
+                "required": false,
+                "default": ""
             },
             {
                 "name": "MAX_PLAYERS",
                 "type": "number",
-                "required": false
+                "required": false,
+                "default": ""
             },
             {
                 "name": "MAX_WORLD_SIZE",
                 "type": "string",
-                "required": false
+                "required": false,
+                "default": ""
             }
         ],
         "mounts": [
             {
-                "source": "/minecraft/data",
+                "source": "[generated]",
                 "destination": "/data",
                 "required": false
             },
             {
-                "source": "/minecraft/worlds",
+                "source": "[generated]",
                 "destination": "/worlds",
                 "required": false
             }
@@ -104,49 +115,6 @@
         }
     },
     "plugins": [
-        {
-            "id": "plugin-hello-world",
-            "description": "Hello world plugin",
-            "version": "0.0.1",
-            "capabilities": [
-                {
-                    "type": "HEALTH"
-                }, 
-                {
-                    "type": "BACKUP"
-                }, 
-                {
-                    "type": "STATISTICS",
-                    "outputs": [
-                        {
-                            "name": "serverName",
-                            "type": "string"
-                        },
-                        {
-                            "name": "playerCount",
-                            "type": "number"
-                        },
-                        {
-                            "name": "serverUpSince",
-                            "type": "date"
-                        }
-                    ]
-                },
-                {
-                    "type": "SERVER_LIFECYCLE"
-                }
-            ]
-        },
-        {
-            "id": "plugin-s3-backup",
-            "name": "S3 Backup plugin",
-            "description": "Plugin to backup world to S3",
-            "version": "0.0.1",
-            "capabilities": [
-                {
-                    "type": "BACKUP"
-                }
-            ]
-        }
+        "NOOP"
     ]
 }

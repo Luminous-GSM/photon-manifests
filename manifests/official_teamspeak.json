@@ -1,10 +1,11 @@
 {
-    "id": "teamspeak",
+    "id": "official_teamspeak",
     "name": "Teamspeak",
+    "author": "TeamSpeak-Systems",
     "documentationUrl": "https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images",
     "verified": true,
     "description": "TeamSpeak (TS) is a proprietary voice-over-Internet Protocol (VoIP) application for audio communication between users on a chat channel, much like a telephone conference call. The client software connects to a TeamSpeak server of the user's choice, from which the user may join chat channels.",
-    "imageUrl": "https://i.ibb.co/0KFCJr1/Teamspeak-Logo.png",
+    "imageUrl": "/icons/minecraft.png",
     "arch": [
         "linux/amd64"
     ]

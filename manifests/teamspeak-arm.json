@@ -1,10 +1,11 @@
 {
-    "id": "teamspeak-arm",
-    "name": "Teamspeak-arm",
+    "id": "teamspeak_arm",
+    "name": "TeamspeakArm",
+    "author": "ertagh",
     "documentationUrl": "https://github.com/ertagh/teamspeak3-server-arm",
     "verified": false,
     "description": "TeamSpeak (TS) is a proprietary voice-over-Internet Protocol (VoIP) application for audio communication between users on a chat channel, much like a telephone conference call. The client software connects to a TeamSpeak server of the user's choice, from which the user may join chat channels.",
-    "imageUrl": "https://i.ibb.co/0KFCJr1/Teamspeak-Logo.png",
+    "imageUrl": "/icons/minecraft.png",
     "arch": [
         "linux/arm/v7",
         "limux/arm64/v8"
