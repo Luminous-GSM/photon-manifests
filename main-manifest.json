@@ -5,7 +5,7 @@
         "imageUrl": "/icons/minecraft.png",
         "photons": [
             {
-                "name": "Minecraft @ itzg",
+                "name": "Minecraft",
                 "id": "itzg_minecraft",
                 "author": "itzg"
             }
@@ -25,7 +25,7 @@
         "imageUrl": "/icons/rust.png",
         "photons": [
             {
-                "name": "Rust @ didstopia",
+                "name": "Rust",
                 "id": "didstopia_rust",
                 "author": "didstopia"
             }
@@ -44,12 +44,12 @@
         "imageUrl": "/icons/teamspeak.png",
         "photons": [
             {
-                "name": "Teamspeak @ official",
+                "name": "Teamspeak",
                 "id": "official_teamspeak",
                 "author": "TeamSpeak-Systems"
             },
             {
-                "name": "Teamspeak @ ertagh",
+                "name": "Teamspeak",
                 "id": "teamspeak_arm",
                 "author": "ertagh"
             }
