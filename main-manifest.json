@@ -46,7 +46,7 @@
             {
                 "name": "Teamspeak",
                 "id": "official_teamspeak",
-                "author": "official"
+                "author": "TeamSpeak-Systems"
             },
             {
                 "name": "Teamspeak",
@@ -60,5 +60,19 @@
             "Communication"
         ],
         "type": "service"
+    },
+    {
+        "id": "ark",
+        "name": "Ark",
+        "imageUrl": "/icons/ark.png",
+        "photons": [],
+        "description": "Ark: Survival Evolved (stylized as ARK) is a 2017 action-adventure survival video game developed by Studio Wildcard. In the game, players must survive being stranded on one of several maps filled with roaming dinosaurs, fictional fantasy monsters and other prehistoric animals, natural hazards, and potentially hostile human players.",
+        "url": "https://www.teamspeak.com",
+        "tags": [
+            "Open-world",
+            "Survival",
+            "MMORPG"
+        ],
+        "type": "game"
     }
 ]
