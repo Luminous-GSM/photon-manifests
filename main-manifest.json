@@ -7,7 +7,8 @@
             {
                 "name": "Minecraft",
                 "id": "itzg_minecraft",
-                "author": "itzg"
+                "author": "itzg",
+                "verified": true
             }
         ],
         "description": "Minecraft is a sandbox video game developed by the Swedish video game developer Mojang Studios. In Minecraft, players explore a blocky, procedurally generated 3D world with virtually infinite terrain, and may discover and extract raw materials, craft tools and items, and build structures or earthworks.",
@@ -27,7 +28,8 @@
             {
                 "name": "Rust",
                 "id": "didstopia_rust",
-                "author": "didstopia"
+                "author": "didstopia",
+                "verified": true
             }
         ],
         "description": "Rust is a multiplayer-only survival video game developed by Facepunch Studios. The objective of Rust is to survive in the wilderness using gathered or stolen materials. Players must successfully manage their hunger, thirst, and health, or risk dying. Despite the presence of hostile animals such as bears and wolves, the primary threat to the player is other players due to the game being solely multiplayer.",
@@ -46,7 +48,8 @@
             {
                 "name": "Teamspeak",
                 "id": "official_teamspeak",
-                "author": "TeamSpeak-Systems"
+                "author": "TeamSpeak-Systems",
+                "verified": true
             },
             {
                 "name": "Teamspeak",
