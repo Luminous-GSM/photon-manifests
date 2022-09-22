@@ -8,7 +8,12 @@
                 "name": "Minecraft",
                 "id": "itzg_minecraft",
                 "author": "itzg",
-                "verified": true
+                "verified": true,
+                "arch": [
+                    "linux/arm/v7",
+                    "linux/arm64",
+                    "linux/amd64"
+                ]
             }
         ],
         "description": "Minecraft is a sandbox video game developed by the Swedish video game developer Mojang Studios. In Minecraft, players explore a blocky, procedurally generated 3D world with virtually infinite terrain, and may discover and extract raw materials, craft tools and items, and build structures or earthworks.",
@@ -29,7 +34,10 @@
                 "name": "Rust",
                 "id": "didstopia_rust",
                 "author": "didstopia",
-                "verified": true
+                "verified": true,
+                "arch": [
+                    "linux/amd64"
+                ]
             }
         ],
         "description": "Rust is a multiplayer-only survival video game developed by Facepunch Studios. The objective of Rust is to survive in the wilderness using gathered or stolen materials. Players must successfully manage their hunger, thirst, and health, or risk dying. Despite the presence of hostile animals such as bears and wolves, the primary threat to the player is other players due to the game being solely multiplayer.",
@@ -49,13 +57,20 @@
                 "name": "Teamspeak",
                 "id": "official_teamspeak",
                 "author": "TeamSpeak-Systems",
-                "verified": true
+                "verified": true,
+                "arch": [
+                    "linux/amd64"
+                ]
             },
             {
                 "name": "Teamspeak",
                 "id": "teamspeak_arm",
                 "author": "ertagh",
-                "verified": false
+                "verified": false,
+                "arch": [
+                    "linux/arm/v7",
+                    "limux/arm64/v8"
+                ]
             }
         ],
         "description": "TeamSpeak (TS) is a proprietary voice-over-Internet Protocol (VoIP) application for audio communication between users on a chat channel, much like a telephone conference call. The client software connects to a TeamSpeak server of the user's choice, from which the user may join chat channels.",
