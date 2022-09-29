@@ -94,5 +94,29 @@
             "MMORPG"
         ],
         "type": "game"
+    },
+    {
+        "id": "code-server",
+        "name": "VS Code Server",
+        "imageUrl": "/icons/vs-code.png",
+        "photons": [
+            {
+                "name": "VS Code Server",
+                "id": "official_vs_code",
+                "author": "Coder",
+                "verified": true,
+                "arch": [
+                    "linux/amd64",
+                    "linux/arm/v7",
+                    "limux/arm64/v8"
+                ]
+            }
+        ],
+        "description": "Visual Studio Code is a source-code editor that can be used with a variety of programming languages. It is used a powerful file browser and editor that can upload and download files from and to the game server.",
+        "url": "https://coder.com/",
+        "tags": [
+            "Communication"
+        ],
+        "type": "extension"
     }
 ]

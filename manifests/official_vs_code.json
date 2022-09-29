@@ -1,0 +1,83 @@
+{
+	"id": "official_vs_code",
+	"name": "VS Code Server",
+	"author": "Coder",
+	"documentationUrl": "https://github.com/linuxserver/docker-code-server",
+	"description": "Visual Studio Code is a source-code editor that can be used with a variety of programming languages. It is used a powerful file browser and editor that can upload and download files from and to the game server.",
+	"verified": true,
+	"imageUrl": "/icons/vs-code.png",
+	"arch": [
+		"linux/arm/v7",
+		"linux/arm64",
+		"linux/amd64"
+	],
+	"launchConfiguration": {
+		"image": "lscr.io/linuxserver/code-server",
+		"tag": "latest",
+		"portConfig": [
+			{
+				"port": 8443,
+				"protocol": "tcp"
+			}
+		],
+		"environmentVariables": [
+			{
+				"name": "PASSWORD",
+				"type": "string",
+				"required": false,
+				"default": ""
+			},
+			{
+				"name": "HASHED_PASSWORD",
+				"type": "string",
+				"required": true,
+				"default": "{{fusion.role.filebrowser.password}}"
+			},
+			{
+				"name": "SUDO_PASSWORD",
+				"type": "string",
+				"required": false,
+				"default": ""
+			},
+			{
+				"name": "SUDO_PASSWORD_HASH",
+				"type": "string",
+				"required": true,
+				"default": "{{fusion.role.filebrowser.sudo_password}}"
+			},
+			{
+				"name": "PROXY_DOMAIN",
+				"type": "string",
+				"required": false,
+				"default": ""
+			},
+			{
+				"name": "DEFAULT_WORKSPACE",
+				"type": "string",
+				"required": true,
+				"default": "{{fusion.root}}"
+			}
+		],
+		"mounts": [
+			{
+				"source": "{{fusion.directory.root}}",
+				"destination": "/fusion",
+				"required": false
+			},
+			{
+				"source": "{{fusion.directory.root}}/{{fusion.directory.data}}/{{fusion.pod.id}}/config",
+				"destination": "/config",
+				"required": false
+			}
+		],
+		"command": "",
+		"healthConfiguration": {
+			"type": "docker",
+			"command": "",
+			"states": []
+		}
+	},
+	"plugins": [
+		"NOOP"
+	]
+}

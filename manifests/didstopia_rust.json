@@ -96,7 +96,7 @@
 		],
 		"mounts": [
 			{
-				"source": "[generated]",
+				"source": "{{fusion.directory.root}}/{{fusion.directory.data}}/{{fusion.pod.id}}/steamcmd/rust",
 				"destination": "/steamcmd/rust",
 				"required": false
 			}
