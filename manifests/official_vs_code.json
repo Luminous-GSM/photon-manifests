@@ -55,7 +55,7 @@
 				"name": "DEFAULT_WORKSPACE",
 				"type": "string",
 				"required": true,
-				"default": "{{fusion.root}}"
+				"default": "/fusion"
 			}
 		],
 		"mounts": [
