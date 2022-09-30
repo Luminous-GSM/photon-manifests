@@ -43,7 +43,7 @@
 				"name": "SUDO_PASSWORD_HASH",
 				"type": "string",
 				"required": true,
-				"default": "{{fusion.role.filebrowser.sudo_password}}"
+				"default": "{{fusion.role.filebrowser.password}}"
 			},
 			{
 				"name": "PROXY_DOMAIN",
@@ -83,7 +83,7 @@
 				"required": false
 			},
 			{
-				"source": "{{fusion.directory.root}}/{{fusion.directory.data}}/{{fusion.pod.id}}/config",
+				"source": "{{fusion.directory.data}}/{{fusion.pod.id}}/config",
 				"destination": "/config",
 				"required": false
 			}

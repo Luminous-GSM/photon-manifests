@@ -89,12 +89,12 @@
         ],
         "mounts": [
             {
-                "source": "{{fusion.directory.root}}/{{fusion.directory.data}}/{{fusion.pod.id}}/data",
+                "source": "{{fusion.directory.data}}/{{fusion.pod.id}}/data",
                 "destination": "/data",
                 "required": false
             },
             {
-                "source": "{{fusion.directory.root}}/{{fusion.directory.data}}/{{fusion.pod.id}}/worlds",
+                "source": "{{fusion.directory.data}}/{{fusion.pod.id}}/worlds",
                 "destination": "/worlds",
                 "required": false
             }
