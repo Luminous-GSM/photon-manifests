@@ -56,6 +56,24 @@
 				"type": "string",
 				"required": true,
 				"default": "/fusion"
+			},
+			{
+				"name": "DOCKER_MODS",
+				"type": "string",
+				"required": true,
+				"default": "linuxserver/mods:code-server-ssl"
+			},
+			{
+				"name": "SSL_CERT_PATH",
+				"type": "string",
+				"required": true,
+				"default": "{{fusion.directory.certs}}/fusion.crt"
+			},
+			{
+				"name": "SSL_KEY_PATH",
+				"type": "string",
+				"required": true,
+				"default": "{{fusion.directory.certs}}/fusion.key"
 			}
 		],
 		"mounts": [
