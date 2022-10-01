@@ -2,6 +2,7 @@
 	"id": "official_vs_code",
 	"name": "VS Code Server",
 	"author": "Coder",
+	"type": "extension",
 	"documentationUrl": "https://github.com/linuxserver/docker-code-server",
 	"description": "Visual Studio Code is a source-code editor that can be used with a variety of programming languages. It is used a powerful file browser and editor that can upload and download files from and to the game server.",
 	"verified": true,

@@ -115,7 +115,8 @@
         "description": "Visual Studio Code is a source-code editor that can be used with a variety of programming languages. It is used a powerful file browser and editor that can upload and download files from and to the game server.",
         "url": "https://coder.com/",
         "tags": [
-            "Communication"
+            "File-Browser",
+            "Editor"
         ],
         "type": "extension"
     }
